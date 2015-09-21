@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         int successes = 0;
         for (int i = 0; i < NUMBEROFTRIES; i++) {
-            int result = swappingWasSuccess();
+            int result = getResultOfSwap();
             if (result == 1) {
                 successes++;
             } else if(result == 0) {
@@ -22,7 +22,7 @@ public class Main {
     }
 
     //Returns -1 if lost, 1 if won, 0 if 50-50
-    public static int swappingWasSuccess() throws Exception {
+    public static int getResultOfSwap() throws Exception {
         Question question = new Question();
         Answer currentGuess = Answer.getRandomAnswer();
         //Swapping will result in loss if right Answer was guessed
