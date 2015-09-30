@@ -1,4 +1,4 @@
-package com.company;
+package Testers;
 
 public class Main {
 
